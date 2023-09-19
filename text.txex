@@ -1,0 +1,74 @@
+
+    min-width: 100%;
+    grid-column: span 6 / auto;
+    padding-bottom: 0.75rem;
+    gap: 0.125rem;
+    align-items: flex-start;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    border: 0.5px solid rgb(232, 232, 232);
+    box-shadow: rgba(0, 0, 0, 0.04) 2px 2px 8px;
+    border-radius: 8px;
+
+
+
+#app > 
+div > div > div:nth-child(3) > div > div:nth-child(4) > div > div.SliderProductList__Wrapper-sc-14wck6y-0.ggPUa-d > div.SliderProductList__Container-sc-14wck6y-1.fUKyWD > div:nth-child(6)
+
+    cursor: pointer;
+    flex: 0 1 0%;
+    min-width: 179px;
+    max-width: 179px;
+
+
+
+
+
+    .cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  min-width: 140px;
+  grid-column: span 6 / auto;
+  padding-bottom: 0.75rem;
+  gap: 0.125rem;
+  align-items: flex-start;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  
+  border-radius: 8px;
+  margin: 2%;
+  border:2px solid whitesmoke;
+  
+
+}
+
+
+.card_image:nth-child(1){
+background-image:url(img/product11-free-img.jpg);
+background-size:cover;
+background-position: center;
+width: 100%;
+height:200px;
+border-radius: 6px;
+margin: o%;
+
+}
+.cardad{
+  margin: 5px;
+  width: 100%;
+  height: ;
+}
+
+

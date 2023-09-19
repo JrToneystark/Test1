@@ -1,0 +1,747 @@
+
+.header {
+background-color: #fff;
+box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+
+width: 100%;
+z-index: 3;
+font-weight: bold;
+
+
+}
+
+.header ul {
+margin: 0;
+padding: 0;
+list-style: none;
+overflow: hidden;
+background-color: #fff;
+}
+
+.header li a {
+display: block;
+color: black;
+padding: 5px 5px;
+border-right: 1px solid #f4f4f4;
+text-decoration: none;
+text-align:center ;
+justify-content: center;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+background-color: #f4f4f4;
+}
+
+.header .logo1 {
+display: block;
+float: left;
+font-size: 2em;
+padding:0px 5px 0px 5;
+
+text-decoration: none;
+
+}
+
+/* menu */
+
+.header .menu {
+clear: both;
+max-height: 0;
+transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+cursor: pointer;
+display: inline-block;
+float: right;
+padding: 28px 20px;
+position: relative;
+user-select: none;
+}
+
+.header .menu-icon .navicon {
+background: #333;
+display: block;
+height: 2px;
+position: relative;
+transition: background .2s ease-out;
+width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+background: #333;
+content: '';
+display: block;
+height: 100%;
+position: absolute;
+transition: all .2s ease-out;
+width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+.header li {
+  float: left;
+}
+.header li a {
+  padding: 20px 30px;
+}
+.header .menu {
+  clear: none;
+  
+  max-height: none;
+}
+.header .menu-icon {
+  display: none;
+}
+
+
+}
+
+
+
+
+
+.footer-distributed .footer-icons :hover:nth-child(1){
+background: #2f55a4;
+
+}
+.footer-distributed .footer-icons :hover:nth-child(2){
+background: #00b9ff;
+
+
+}
+.footer-distributed .footer-icons :hover:nth-child(3){
+background: rgb(131,58,180);
+background: linear-gradient(77deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.footer-distributed .footer-icons :hover:nth-child(4){
+background:#0088cc;
+}
+.footer-distributed .footer-icons  :hover:nth-child(5){
+background: #000000;
+}
+
+.footer-distributed .footer-icons :hover:nth-child(6){
+background:#0088cc;
+}
+.footer-distributed .footer-icons  :hover:nth-child(7){
+background: #000000;
+}
+
+.footer-distributed .footer-icons  :hover:nth-child(8){
+background: #a81e1e;
+
+}
+
+
+
+
+
+
+
+
+
+
+.footer-icons  a :hover{
+background: none;
+}
+
+
+.footer-distributed{
+background:white;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+font: bold 16px sans-serif;
+text-align: left;
+padding: 50px 60px 40px;
+overflow: hidden;
+background-color: #fff;
+box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+
+}
+
+
+
+
+.main1{
+display: flex;
+flex-wrap: wrap;
+
+justify-content: center;
+}
+.div1{
+
+color: #fff;
+width: 412px;
+background-size: cover;
+height: 25vmax ;
+border-radius: 11px;
+
+background-color:black;
+background-position: center;
+background-image: url(img/1286688.jpg) ;
+
+box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+margin-top: 2%;
+}
+@media screen and (max-width: 800px) {
+  .div1{
+   width: 100%;
+    /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .card{
+    width: 150px;
+    
+  }
+  }
+  
+  @media screen and (max-width: 100%) {
+  .div1{
+    width: 100%;
+   
+     /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .card{
+    width: 150px;
+  }
+  }
+  @media screen and (max-width: 100000px) {
+  .div1{
+    
+  width:100%;
+     /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .card{
+    width: 150px;
+  } 
+  }
+
+
+
+/*div area*/
+
+.flex{
+  /*
+padding:2px;
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+*/
+
+padding: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.divt{
+ /* background-color: rgb(3, 3, 26);
+  
+  margin: 20px;
+  padding:5px ;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  width:270px;
+  height:200px;
+  border-radius:20px;*/
+  background-color: rgb(3, 3, 26);
+  margin: 20px;
+  margin: 20px 14px 50px 14px;
+  /* padding: 5px; */
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  width: 270px;
+  height: 200px;
+  border-radius: 20px;
+}
+.divin{
+  width: 90%;
+  height:25%;
+  margin: 10px;
+  background: linear-gradient(355deg, #0A7AF9 0%, #1229D6 100%);
+  border-radius:20px;
+  position: relative;
+  top:85%;
+display: flex;
+flex: auto;
+
+
+}
+/*
+.dd{
+  padding: 5px;
+  margin: 5px;
+  width: 250px;
+  height: 200px;
+  position: relative;
+  bottom:180px;
+border-radius: 20px;
+background-repeat:no-repeat;
+padding: auto;
+background-image:url(logo.png);
+background-size: cover;
+}*/ 
+.divt:nth-child(1){
+  background-image:url(p/set1.jpeg); 
+  background-size: cover;
+ border: 2px solid black;
+ background-position: center;
+  
+}
+.divt:nth-child(2){
+  background-image:url(p/set2.jpeg); 
+  background-size: cover;
+  background-position: center;
+  border: 2px solid black;
+}
+
+.divt:nth-child(3){
+  background-image:url(p/set3.jpeg); 
+  background-size: cover;
+  background-position: center;
+  border: 2px solid black;
+}
+.divt:nth-child(4){
+  background-image:url(p/set4.jpeg); 
+  background-size:cover ;
+  background-position: center;
+  border: 2px solid black;
+
+}
+
+
+/* CSS */
+.button-86 {
+  all: unset;
+  width:100%;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-86::after,
+.button-86::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+.button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button-86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+
+
+
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  min-width: 120px;
+  grid-column: span 6 / auto;
+  padding-bottom: 0.75rem;
+  gap: 0.125rem;
+  align-items: flex-start;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  
+  border-radius: 8px;
+  margin: 2%;
+  border:2px solid whitesmoke;
+  
+
+}
+
+
+.card_image1,.card_image2,.card_image3,.card_image4{
+
+background-size:cover;
+background-position: center;
+width: 100%;
+height:200px;
+border-radius: 6px;
+margin: o%;
+}
+
+.card_image1{
+  background-image: url(img/product11-free-img.jpg);
+}
+.card_image2{
+  background-image: url(img/product14-free-img.jpg);
+}
+.card_image3{
+  background-image: url(img/product17-free-img.jpg);
+}
+.card_image4{
+  background-image: url(img/product13-free-img.jpg);
+} 
+  
+
+.cardad{
+  margin: 4%;
+  width: 100%;
+
+  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  float: left;
+  }
+  
+  /* The company logo */
+  
+  .footer-distributed h3{
+  color:  black;
+  font: normal 36px ;
+  margin: 0 0 10px;
+  }
+  
+  .footer-distributed h3 span{
+  color:  #5383d3;
+  }
+  
+  /* Footer links */
+  
+  .footer-distributed .footer-links{
+  color:black;
+  margin: 0 0 10px;
+  padding: 0;
+  }
+  
+  .footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+  }
+  
+  .footer-distributed .footer-company-name{
+  color:  black;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  }
+  
+  /* Footer social icons */
+  
+  .footer-distributed .footer-icons{
+  margin-top: 40px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+  
+  font-size: 20px;
+  color:white;
+  text-align: center;
+  line-height: 35px;
+  
+  margin-right: 3px;
+  margin-bottom: 5px;
+  }
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right{
+  float: right;
+  }
+  
+  .footer-distributed .footer-right p{
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px 42px 0 0;
+  color: black;
+  }
+  
+  /* The contact form */
+  
+  .footer-distributed form{
+  display: inline-block;
+  }
+  
+  .footer-distributed form input,
+  .footer-distributed form textarea{
+  display: block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color:  #1f2022;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+  
+  font: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  color:  #d1d2d2;
+  
+  width: 400px;
+  padding: 18px;
+  }
+  
+  .footer-distributed ::-webkit-input-placeholder {
+  color:  #5c666b;
+  }
+  
+  .footer-distributed ::-moz-placeholder {
+  color:  #5c666b;
+  opacity: 1;
+  }
+  
+  .footer-distributed :-ms-input-placeholder{
+  color:  #5c666b;
+  }
+  
+  
+  .footer-distributed form input{
+  height: 55px;
+  margin-bottom: 15px;
+  }
+  
+  .footer-distributed form textarea{
+  height: 100px;
+  margin-bottom: 20px;
+  }
+  
+  .footer-distributed form button{
+  border-radius: 3px;
+  background-color:  #33383b;
+  color: white;
+  border: 0;
+  padding: 15px 50px;
+  font-weight: bold;
+  float: right;
+  }
+  
+  /* If you don't want the footer to be responsive, remove these media queries */
+  
+  @media (max-width: 1000px) {
+  
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+  
+  .footer-distributed .footer-company-name{
+    font-size: 12px;
+  }
+  
+  .footer-distributed form input,
+  .footer-distributed form textarea{
+    width: 250px;
+  }
+  
+  .footer-distributed form button{
+    padding: 10px 35px;
+  }
+  
+  }
+  
+  @media (max-width: 800px) {
+  
+  .footer-distributed{
+    padding: 30px;
+    
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right{
+    float: none;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .footer-distributed .footer-left{
+    margin-bottom: 40px;
+  }
+  
+  .footer-distributed form{
+    margin-top: 30px;
+  }
+  
+  .footer-distributed form{
+    display: block;
+  }
+  
+  .footer-distributed form button{
+    float: none;
+  }
+  }
+  
+
+
+
+  /* A font family name and a generic family name */
+font-family: "Gill Sans Extrabold", sans-serif;
+font-family: "Goudy Bookletter 1911", sans-serif;
+
+/* A generic family name only */
+font-family: serif;
+font-family: sans-serif;
+font-family: monospace;
+font-family: cursive;
+font-family: fantasy;
+font-family: system-ui;
+font-family: ui-serif;
+font-family: ui-sans-serif;
+font-family: ui-monospace;
+font-family: ui-rounded;
+font-family: emoji;
+font-family: math;
+font-family: fangsong;
+
+/* Global values */
+font-family: inherit;
+font-family: initial;
+font-family: revert;
+font-family: revert-layer;
+font-family: unset;
+
+
+
+button{
+
+  width: 200px;
+}
